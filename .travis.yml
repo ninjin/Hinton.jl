@@ -1,0 +1,17 @@
+# vim:set ft=yaml ts=4 sw=4 sts=4 autoindent:
+
+# Configuration file for Travis CI continuous integration.
+#
+# Author:   Pontus Stenetorp    <pontus stenetorp se>
+# Version:  2014-12-20
+
+# TODO: Coverage.
+
+language: julia
+julia:
+    - release
+    - nightly
+matrix:
+    fast_finish: true
+notifications:
+    email: false
