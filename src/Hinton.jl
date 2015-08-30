@@ -8,6 +8,8 @@
 # TODO: How do we expose the variants more cleanly?
 # TODO: Should we default to SVG/term depending on things like IJulia?
 
+VERSION >= v"0.4.0-dev+6521" && __precompile__()
+
 using Compose
 
 module Hinton
