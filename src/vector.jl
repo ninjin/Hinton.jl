@@ -7,13 +7,13 @@
 
 # TODO: Consider a version with JavaScript injection.
 
-using Color
+using Colors
 using Compose
 
 immutable HintonVecStyle
-    pos   ::ColorValue
-    neg   ::ColorValue
-    bg    ::ColorValue
+    pos   ::Color
+    neg   ::Color
+    bg    ::Color
     margin::Float64
 end
 pos(o::HintonVecStyle)    = o.pos
@@ -21,7 +21,7 @@ neg(o::HintonVecStyle)    = o.neg
 bg(o::HintonVecStyle)     = o.bg
 margin(o::HintonVecStyle) = o.margin
 const VECSTYLE = HintonVecStyle(
-    color("white"),
+    colorant"white",
     RGB(map(x -> x/255, (51 , 51 , 50 ))...), # Dark grey, "almost" black.
     RGB(map(x -> x/255, (132, 132, 130))...), # Battleship grey.
     0.002,
