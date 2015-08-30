@@ -43,7 +43,9 @@ function show(io::IO, o::HintonTextDiagram)
     for j in 1:m
         for i in 1:n
             v      = w[j, i]
-            bin    = iround((v - minval)/(maxval - minval)*(numbins - 1)) + 1
+            bin    = @compat let
+                round(Int, (v - minval)/(maxval - minval)*(numbins - 1)) + 1
+            end
             sym    = bins(sty)[bin]
             colour = bin < (numbins + 1)÷2 ? neg(sty) : pos(sty)
             print(io, "\033[1m$(bg(sty))$colour$sym\033[0m")

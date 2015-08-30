@@ -14,6 +14,8 @@ using Compose
 
 module Hinton
 
+using Compat
+
 export hintontxt, hintonvec
 
 include("text.jl")
