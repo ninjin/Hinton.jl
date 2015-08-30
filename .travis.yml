@@ -5,8 +5,6 @@
 # Author:   Pontus Stenetorp    <pontus stenetorp se>
 # Version:  2014-12-20
 
-# TODO: Coverage.
-
 language: julia
 julia:
     - release
@@ -15,3 +13,7 @@ matrix:
     fast_finish: true
 notifications:
     email: false
+after_success: |
+    julia -e 'Pkg.add("Coverage")'
+    julia -e 'cd(Pkg.dir("Hinton")); using Coverage;
+        Coveralls.submit(Coveralls.process_folder())'
