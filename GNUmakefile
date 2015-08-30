@@ -16,7 +16,7 @@ test:
 	${JULIA_CMD} test/runtests.jl
 
 .PHONY: coverage
-coverage: JULIA_CMD+=--code-coverage
+coverage: JULIA_CMD+=--code-coverage --inline=no
 coverage: test
 
 define EXAMPLE_JL
@@ -39,4 +39,5 @@ example: example_vec.png
 
 .PHONY: clean
 clean:
+	find src test -name '*.cov' | xargs -r rm
 	rm -f example_vec.png
