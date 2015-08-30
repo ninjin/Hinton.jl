@@ -1,4 +1,7 @@
-[![Build Status][travis_badge]][travis]
+[![Release status][release_badge]][release]
+[![Nightly status][nightly_badge]][nightly]
+[![Build status][travis_badge]][travis]
+[![Coverage status][coveralls_badge]][coveralls]
 
 **Hinton** is a small [Julia][julia] library for generating Hinton diagrams.
 It supports standard graphics formats such as PNG, SVG, and PDF, as well as
@@ -50,8 +53,14 @@ draws upon [Compose][compose]:
 
 ![An example Hinton diagram using vector graphics.][example_vec]
 
-[travis]: https://travis-ci.org/ninjin/Hinton.jl
-[travis_badge]: https://img.shields.io/travis/ninjin/Hinton.jl/master.svg?style=flat
+[compose]: http://composejl.org/
+[coveralls]: https://coveralls.io/r/ninjin/Hinton.jl
+[coveralls_badge]: https://img.shields.io/coveralls/ninjin/Hinton.jl/master.svg?style=flat
 [example_txt]: https://raw.githubusercontent.com/ninjin/Hinton.jl/master/examples/example_txt.png
 [example_vec]: https://raw.githubusercontent.com/ninjin/Hinton.jl/master/examples/example_vec.png
-[compose]: http://composejl.org/
+[nightly]: http://pkg.julialang.org/?pkg=Hinton&ver=nightly
+[nightly_badge]: http://pkg.julialang.org/badges/Hinton_0.4.svg
+[release]: http://pkg.julialang.org/?pkg=Hinton&ver=release
+[release_badge]: http://pkg.julialang.org/badges/Hinton_0.3.svg
+[travis]: https://travis-ci.org/ninjin/Hinton.jl
+[travis_badge]: https://img.shields.io/travis/ninjin/Hinton.jl/master.svg?style=flat
