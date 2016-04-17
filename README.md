@@ -1,5 +1,6 @@
-[![Release status][release_badge]][release]
-[![Nightly status][nightly_badge]][nightly]
+[![0.5 status][0.5_badge]][pkg]
+[![0.6 status][0.6_badge]][pkg]
+[![Nightly status][nightly_badge]][pkg]
 [![Build status][travis_badge]][travis]
 [![Coverage status][coveralls_badge]][coveralls]
 
@@ -58,9 +59,8 @@ draws upon [Compose][compose]:
 [coveralls_badge]: https://img.shields.io/coveralls/ninjin/Hinton.jl/master.svg?style=flat
 [example_txt]: https://raw.githubusercontent.com/ninjin/Hinton.jl/master/examples/example_txt.png
 [example_vec]: https://raw.githubusercontent.com/ninjin/Hinton.jl/master/examples/example_vec.png
-[nightly]: http://pkg.julialang.org/?pkg=Hinton&ver=0.4
-[nightly_badge]: http://pkg.julialang.org/badges/Hinton_0.4.svg
-[release]: http://pkg.julialang.org/?pkg=Hinton&ver=0.3
-[release_badge]: http://pkg.julialang.org/badges/Hinton_0.3.svg
+[pkg]: http://pkg.julialang.org/?pkg=Hinton
+[0.5_badge]: http://pkg.julialang.org/badges/Hinton_0.5.svg
+[0.6_badge]: http://pkg.julialang.org/badges/Hinton_0.6.svg
 [travis]: https://travis-ci.org/ninjin/Hinton.jl
 [travis_badge]: https://img.shields.io/travis/ninjin/Hinton.jl/master.svg?style=flat
