@@ -28,7 +28,7 @@ const VECSTYLE = HintonVecStyle(
     )
 
 function hintonvec{T<:Real}(w::AbstractMatrix{T}, sty::HintonVecStyle=VECSTYLE)
-    mabs   = maximum(abs(w))
+    mabs   = maximum(abs.(w))
     (m, n) = size(w)
     mgn    = margin(sty)
     step   = (1 - (max(m, n) + 1)*mgn)/max(m, n)
