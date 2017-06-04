@@ -1,6 +1,5 @@
 [![0.5 status][0.5_badge]][pkg]
 [![0.6 status][0.6_badge]][pkg]
-[![Nightly status][nightly_badge]][pkg]
 [![Build status][travis_badge]][travis]
 [![Coverage status][coveralls_badge]][coveralls]
 
