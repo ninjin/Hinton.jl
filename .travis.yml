@@ -10,7 +10,8 @@ os:
     - linux
     - osx
 julia:
-    - release
+    - 0.5
+    - 0.6
     - nightly
 matrix:
     fast_finish: true
