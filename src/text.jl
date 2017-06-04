@@ -9,9 +9,9 @@
 
 immutable HintonTextStyle
     bins::Vector{Char}
-    pos ::UTF8String
-    neg ::UTF8String
-    bg  ::UTF8String
+    pos ::String
+    neg ::String
+    bg  ::String
     function HintonTextStyle(syms, pos, neg, bg; mirror_syms=true)
         new(mirror_syms ? vcat(reverse(syms[2:end]), syms) : bins, pos, neg, bg)
     end
